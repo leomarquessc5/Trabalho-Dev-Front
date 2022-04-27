@@ -12,13 +12,6 @@ body {
     background: #d4e4ef;
 }
 
-footer {
-    font-size: 25px;
-    text-align: center;
-    padding: 25px;
-    font-family: Tahoma;
-}
-
 #container {
     max-width: 1024px;
     margin: 0 auto;
@@ -37,8 +30,16 @@ main {
 }
 
 footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-family: Tahoma;
+    color: white;
+    font-size: 25px;
     background: #6aabd2;
-    height: 7rem;
     font-weight: 500;
 }
 
@@ -94,11 +95,12 @@ main > header {
 }
 #carrinho {
     float: right;
+    justify-content: space-around;
 }
 
 #carrinho-icon {
     display: center; 
-    padding-left: 31.8em; 
+    padding-left: 26.1em; 
     color: #ecedea;
 }
 .preco {
