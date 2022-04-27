@@ -13,10 +13,17 @@ body {
 }
 
 footer {
-    font-size: 25px;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
     text-align: center;
-    padding: 25px;
     font-family: Tahoma;
+    color: white;
+    font-size: 25px;
+    background: #6aabd2;
+    font-weight: 500;
 }
 
 #container {
@@ -36,13 +43,8 @@ main {
     padding: 1rem;
 }
 
-footer {
-    background: #6aabd2;
-    height: 7rem;
-}
-
-
 main > header {
+    background: #799196;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     font-size: 35px;
     text-align: center;
@@ -55,5 +57,5 @@ label {
 }
  
 input {
-    width: calc(100% - 30px);
+    width: calc(103% - 30px);
 }
