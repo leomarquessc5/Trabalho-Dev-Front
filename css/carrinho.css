@@ -43,6 +43,26 @@ footer {
     font-weight: 500;
 }
 
+main > header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800;
+}  
+
+article > p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+#endereco {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 nav {
     background: #0a6082;
     font-size: 20px;
@@ -66,31 +86,7 @@ nav ul li a {
     padding: 15px;
 }
 
-main > header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 800;
-}   
 
-.produto { 
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.produto p {
-    background-color: #d84c72;
-    color: whitesmoke;
-    padding: 5px 10px;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 #carrinho {
     float: right;
     justify-content: space-around;
@@ -100,16 +96,24 @@ main > header {
     display: center; 
     padding-left: 26.1em; 
     color: #ecedea;
+}   
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 }
-#plus {
-    color: white; 
-    float: right; 
-    position: center;
+  
+td, th {
+    border: 1px solid #999;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
 }
-.preco {
-    color: whitesmoke;
-    position: center;
-    font-size: 12px;
-    padding: 5px 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+input {
+    width: calc(101% - 10px);
+    float: right;
+    font-size: 18px;
 }

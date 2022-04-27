@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <title>DeliverShop</title>
-  <link rel="stylesheet" href="/css/localizacao.css">
+  <link rel="stylesheet" href="/css/carrinho.css">
 </head>
 
 <body>
@@ -25,20 +25,54 @@
         <li><a href="index.html">Produtos</a></li>
         <li><a href="sobrenos.html">Sobre nós</a></li>
         <li><a href="localizacao.html">Localização</a></li>
-        <li id="carrinho"><a href="/carrinho.html"><i class="fas fa-shopping-cart" id="carrinho-icon"></i>Carrinho</a></li>
+        <li id="carrinho"><a href="carrinho.html"><i class="fas fa-shopping-cart"></i>Carrinho</a></li>
       </ul>
     </nav>
     <main>
-      <header>Localização:</header>
+      <header>Carrinho:</header>
       <br>
-       <article>
-            <p>
-                Praça Gen. Osório, 125 - Centro, Curitiba - PR, 80020-010
-            </p>
-       </article>
-       <section>
-           <img src="img/endereco.png" alt="endereco" id="endereco" width="80%">
-       </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coca-cola</td>
+            <td>1</td>
+            <td>R$8,99</td>
+          </tr>
+          <tr>
+            <td>Coxão Mole</td>
+            <td>2</td>
+            <td>R$44,90</td>
+          </tr>
+          <tr>
+            <td>Arroz</td>
+            <td>2</td>
+            <td>R$18,99</td>
+          </tr>
+        </tbody>
+      </table>
+    <br>    
+      <table>
+        <thead>
+          <tr>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>R$136,77</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <a href="index.html"><input type="submit"></a>
+      <br>
     </main>
     <footer>
       <p><b>Leonardo Marques Costa</b> - <i> Desenvolvimento Web Básico - Prof. Brilhante</i></p>
