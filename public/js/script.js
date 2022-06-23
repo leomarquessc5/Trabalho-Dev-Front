@@ -33,10 +33,10 @@ const mnCadastro = document.querySelector('#menuCadastro');
 mnCadastro.onclick = function () {
     loadHTML('views/cadastro.html')
 }
-const mnCarrinho = document.querySelector('#carrinho');
-mnCarrinho.onclick = function () {
-    loadHTML('views/carrinho.html')
-}
+// const mnCarrinho = document.querySelector('#btnCarrinho');
+// mnCarrinho.onclick = function () {
+//     loadHTML('views/carrinho.html')
+// }
 
 // Injeta texto sobre nós by JSON
 const btnSobre = document.getElementById('btnSobre')
@@ -110,13 +110,13 @@ if (btnLocal != null) {
     }
 }
 
-// Carne
-const btnCarne = document.getElementById('carne')
-if (btnCarne != null) {
-    btnCarne.onclick = function () {
+// Injeta texto sobre nós by JSON
+const btnCarrinho = document.getElementById('btnCarrinho')
+if (btnCarrinho != null) {
+    btnCarrinho.onclick = function () {
         loadHTML('views/carrinho.html')
 
-        let sectionCarne = document.getElementById('carrinho');
+        let sectionCarrinho = document.getElementById('carrinhos');
         let requestURL = 'http://localhost:3000/projeto';
         let request = new XMLHttpRequest();
 
@@ -124,24 +124,29 @@ if (btnCarne != null) {
         request.responseType = 'json';
         request.send();
         request.onload = function () {
-            let carne = request.response;
-            mostrarSobre(carne);
+            let carrinho = request.response;
+            mostrarCarrinho(carrinho);
         }
 
-        function mostrarSobre(jsonObj) {
+        function mostrarCarrinho(jsonObj) {
             let obj = jsonObj[0]['produtos'];
             for (let i = 0; i < obj.length; i++) {
-                let sectionSobre = document.getElementById('carrinho');
+                let sectionCarrinho = document.getElementById('carrinhos');
+                let myH2 = document.createElement('h3')
                 let myArticle = document.createElement('article');
-                let myPara2 = document.createElement('p');
-                let myPara3 = document.createElement('p');
+                let myPara2 = document.createElement('div');
+                myPara2.textContent = obj[i].nome + ' |  ' + 'Preço:' + ' ' + obj[i].preco + '|   Quantidade: 1 |';
 
-                myPara2.textContent = 'Preço' + obj[i].carne[0].preco;
-                myPara3.textContent = 'Total' + obj[i].carne[0].preco;
                 myArticle.appendChild(myPara2);
-                myArticle.appendChild(myPara3);
-                sectionSobre.appendChild(myArticle);
+                sectionCarrinho.appendChild(myArticle);
             }
+            let sectionTotal = document.getElementById('total');
+            let myArticle = document.createElement('article');
+            let total = document.createElement('strong');
+            total.textContent = 'Total = 104.33';
+
+            myArticle.appendChild(total);
+            sectionTotal.appendChild(myArticle);
         }
 
     }

@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -116,4 +116,4 @@ input {
     width: calc(101% - 10px);
     float: right;
     font-size: 18px;
-}
+} */

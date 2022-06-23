@@ -1,61 +1,50 @@
 {
     "projeto": [
         {
-            "sobre": [
-                {
-                  "text": "A Delivery Shop é uma start-up com foco no delivery de produtos de varejo. Atualmente conta com o sistema de transporte próprio e pioneira na utilização no empacotamento materiáis biodegradáveis. A start-up foi criada com objetivo de atender a demanda de produtos diversos em meio a pandemia do COVID-19, a fim de dar suporte as pessoas em quarentena."
-                }
-              ],
-            "localizacao" : [
+          "sobre": [
               {
-                "text" : "Praça Gen. Osório, 125 - Centro, Curitiba - PR, 80020-010 "
+                "text": "A Delivery Shop é uma start-up com foco no delivery de produtos de varejo. Atualmente conta com o sistema de transporte próprio e pioneira na utilização no empacotamento materiáis biodegradáveis. A start-up foi criada com objetivo de atender a demanda de produtos diversos em meio a pandemia do COVID-19, a fim de dar suporte as pessoas em quarentena."
               }
             ],
-            "produtos": [
-              {
-                "coca": [
-                  {
-                    "preco": 8.99
-                  }
-                ],
-                "carne": [
-                  {
-                    "preco": 44.90
-                  }
-                ],
-                "arroz": [
-                  {
-                    "preco": 18.99
-                  }
-                ],
-                "detergente": [
-                  {
-                    "preco": 1.99
-                  }
-                ],
-                "miojo": [
-                  {
-                    "preco": 2.49
-                  }
-                ],
-                "bis": [
-                  {
-                    "preco": 3.99
-                  }
-                ],
-                "papel": [
-                  {
-                    "preco": 19.99
-                  }
-                ],
-                "leite": [
-                  {
-                    "preco": 2.99
-                  }
-                ]
-
-              }
-            ]
+          "localizacao" : [
+            {
+              "text" : "Praça Gen. Osório, 125 - Centro, Curitiba - PR, 80020-010 "
+            }
+          ],
+          "produtos": [
+            {
+              "nome" : "Coca-Cola",
+              "preco": 8.99
+            },
+            {
+              "nome" : "Coxão Mole",
+              "preco": 44.90
+            },
+            {
+              "nome" : "Arroz",
+              "preco": 18.99
+            },
+            {
+              "nome" : "Detergente",
+              "preco": 1.99
+            },
+            {
+              "nome" : "Miojo",
+              "preco": 2.49
+            },
+            {
+              "nome" : "Bis",
+              "preco": 3.99
+            },
+            {
+              "nome" : "Papel",
+              "preco": 19.99
+            },
+            {
+              "nome" : "Leite",
+              "preco": 2.99
+            }
+          ]
         }
     ]
 }
